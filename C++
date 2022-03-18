@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int t;
+	cin>>t;
+	while(t--){
+	    
+	int a,b,c;
+	int x,y,z;
+	int f=0, g=0;
+	    cin>>a>>b>>c;
+	    cin>>x>>y>>z;
+	    
+	    if(a==x&&b==y&&c==z) break;
+	    
+	    if(a>x) f++;
+	    else g++;
+	    
+	    if(b>y) f++;
+	    else g++;
+	    
+	    if(c>z) f++;
+	    else g++;
+	    
+	    if(f>g) cout<<"A\n";
+	    else cout<<"B\n";
+	}
+	return 0;
+}
